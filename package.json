@@ -1,0 +1,23 @@
+{
+  "name": "foreigneers-ui",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass scss/main.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ycirn/ForeigneersLanding.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ycirn/ForeigneersLanding/issues"
+  },
+  "homepage": "https://github.com/Ycirn/ForeigneersLanding#readme",
+  "devDependencies": {
+    "node-sass": "^4.14.1"
+  }
+}
