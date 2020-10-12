@@ -2,4 +2,6 @@ html,
 body {
     font-size: 16px;
     background-color: $color-bg;
+    position: relative;
+    z-index: -10;
 }

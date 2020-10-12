@@ -23,7 +23,9 @@
     }
 
     &__container {
-        margin-top: 100px;
+        position: relative;
+        z-index: 10;
+        margin-top: 150px;
     }
     &__title {
         &--1 {
@@ -69,19 +71,17 @@
         .bg__container {
             display: flex;
             justify-content: flex-end;
+            z-index: -1;
         }
         &-bg {
             margin-top: -500px;
             background-position: center;
             background-size: cover;
-            height: 662px;
-            width: 600px;
+            height: 750px;
+            width: 680px;
             background-repeat: no-repeat;
             background-image: url("../assets/img/features-bg.png");
-            img {
-                height: 600px;
-                width: auto;
-            }
+            position: absolute;
         }
     }
     &__demo {
@@ -95,8 +95,8 @@
             position: absolute;
             background-position: center;
             background-size: cover;
-            height: 400px;
-            width: 488px;
+            height: 652px;
+            width: 795px;
             background-repeat: no-repeat;
             background-image: url("../assets/img/demo-bg.png");
             margin-top: -100px;

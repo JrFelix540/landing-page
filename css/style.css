@@ -404,7 +404,9 @@ textarea {
 html,
 body {
   font-size: 16px;
-  background-color: #fef8f5; }
+  background-color: #fef8f5;
+  position: relative;
+  z-index: -10; }
 
 /* rubik-regular - latin */
 @font-face {
@@ -602,7 +604,9 @@ body {
       height: 350px; }
 
 .section__container {
-  margin-top: 100px; }
+  position: relative;
+  z-index: 10;
+  margin-top: 150px; }
 
 .section__title--1 {
   text-align: center;
@@ -635,18 +639,17 @@ body {
   position: relative; }
   .section__features .bg__container {
     display: flex;
-    justify-content: flex-end; }
+    justify-content: flex-end;
+    z-index: -1; }
   .section__features-bg {
     margin-top: -500px;
     background-position: center;
     background-size: cover;
-    height: 662px;
-    width: 600px;
+    height: 750px;
+    width: 680px;
     background-repeat: no-repeat;
-    background-image: url("../assets/img/features-bg.png"); }
-    .section__features-bg img {
-      height: 600px;
-      width: auto; }
+    background-image: url("../assets/img/features-bg.png");
+    position: absolute; }
 
 .section__demo .bg__container {
   display: flex;
@@ -657,8 +660,8 @@ body {
   position: absolute;
   background-position: center;
   background-size: cover;
-  height: 400px;
-  width: 488px;
+  height: 652px;
+  width: 795px;
   background-repeat: no-repeat;
   background-image: url("../assets/img/demo-bg.png");
   margin-top: -100px; }
