@@ -544,7 +544,7 @@ body {
 
 @media screen and (max-width: 576px) {
   .feature__img {
-    left: 100px; } }
+    left: 80px; } }
 
 .header__container {
   display: flex;
