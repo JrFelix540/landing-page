@@ -622,6 +622,8 @@ body {
 @media screen and (max-width: 576px) {
   .container {
     width: auto;
+    padding: 0 20px; }
+  .grid-of-3 {
     padding: 0 20px; } }
 
 .footer {
@@ -772,6 +774,8 @@ body {
 @media screen and (max-width: 576px) {
   .section__hero {
     height: 400px; }
+  .section__container {
+    margin-top: 70px; }
   .section__progress .img__devices img {
     width: 350px;
     height: auto; }
