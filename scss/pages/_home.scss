@@ -102,4 +102,13 @@
             margin-top: -100px;
         }
     }
+
+    &__patreon {
+        .patreon__img {
+            img {
+                height: 80px;
+                width: auto;
+            }
+        }
+    }
 }

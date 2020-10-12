@@ -665,3 +665,7 @@ body {
   background-repeat: no-repeat;
   background-image: url("../assets/img/demo-bg.png");
   margin-top: -100px; }
+
+.section__patreon .patreon__img img {
+  height: 80px;
+  width: auto; }
