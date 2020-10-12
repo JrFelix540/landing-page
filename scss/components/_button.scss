@@ -1,0 +1,17 @@
+.btn {
+    &__primary {
+        padding: 10px 30px;
+        border-radius: 10px;
+        border: 2px solid $color-primary;
+    }
+
+    &__secondary {
+        padding: 10px 30px;
+        border-radius: 10px;
+        border: 2px solid $color-white;
+        color: $color-white;
+        font-size: 18px;
+        font-family: "Rubik";
+        text-decoration: none;
+    }
+}

@@ -1,0 +1,27 @@
+.footer {
+    background-color: $color-primary;
+    padding: 40px 0 20px 0;
+    &__center {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item {
+        margin-bottom: 10px;
+    }
+    &__social {
+        display: flex;
+        align-items: center;
+        &-item {
+            margin-right: 35px;
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+
+        &-link {
+            img {
+                height: 35px;
+            }
+        }
+    }
+}

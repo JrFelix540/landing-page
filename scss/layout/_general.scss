@@ -1,0 +1,19 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.grid-of {
+    &-2 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 40px;
+    }
+
+    &-3 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 40px;
+        grid-row-gap: 120px;
+    }
+}
