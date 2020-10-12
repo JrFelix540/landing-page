@@ -771,5 +771,7 @@ body {
   .section__progress .img__devices img {
     width: 350px;
     height: auto; }
+  .section__img img {
+    height: 300px; }
   .section__img .img__discord {
     height: 100px; } }

@@ -184,6 +184,9 @@
         }
 
         &__img {
+            img {
+                height: 300px;
+            }
             .img__discord {
                 height: 100px;
             }
