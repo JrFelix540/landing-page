@@ -141,12 +141,12 @@
         }
 
         &__features {
-            &-bg {
+            .bg__container {
                 display: none;
             }
         }
         &__demo {
-            &-bg {
+            .bg__container {
                 display: none;
             }
             .section__container {

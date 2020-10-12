@@ -758,9 +758,9 @@ body {
     flex-direction: column-reverse; }
     .section__vision .section__container .section__button {
       text-align: center; }
-  .section__features-bg {
+  .section__features .bg__container {
     display: none; }
-  .section__demo-bg {
+  .section__demo .bg__container {
     display: none; }
   .section__demo .section__container {
     display: flex;
