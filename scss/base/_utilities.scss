@@ -12,3 +12,8 @@
         text-align: right;
     }
 }
+@media screen and (max-width: 1024px) {
+    .next__line {
+        display: inline;
+    }
+}

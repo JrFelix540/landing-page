@@ -17,3 +17,38 @@
         grid-row-gap: 120px;
     }
 }
+
+@media screen and (max-width: 1200px) {
+    .container {
+        max-width: 992px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .container {
+        max-width: 768px;
+    }
+
+    .grid-of-3 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        max-width: 576px;
+    }
+    .grid-of-3 {
+        grid-template-columns: 1fr;
+    }
+    .grid-of-2 {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .container {
+        width: auto;
+        padding: 0 20px;
+    }
+}

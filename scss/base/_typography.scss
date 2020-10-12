@@ -113,3 +113,23 @@
         text-decoration: none;
     }
 }
+@media screen and (max-width: 1024px) {
+    .heading {
+        &__primary {
+            line-height: 1.2;
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .heading {
+        &__primary {
+            font-size: 36px;
+        }
+    }
+    .text {
+        &__secondary {
+            line-height: 1.2;
+        }
+    }
+}

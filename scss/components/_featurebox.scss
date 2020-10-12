@@ -16,3 +16,17 @@
         }
     }
 }
+@media screen and(max-width: 768px) {
+    .feature {
+        &__img {
+            left: 200px;
+        }
+    }
+}
+@media screen and(max-width: 576px) {
+    .feature {
+        &__img {
+            left: 100px;
+        }
+    }
+}

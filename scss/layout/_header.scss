@@ -31,4 +31,31 @@
         display: flex;
         align-items: flex-end;
     }
+    &__mobile {
+        &-icon {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .header {
+        &__mobile {
+            &-icon {
+                display: flex;
+            }
+        }
+
+        .menu {
+            &__list {
+                display: none;
+            }
+        }
+        &__btn {
+            display: none;
+        }
+        &__container {
+            padding: 20px !important;
+        }
+    }
 }
