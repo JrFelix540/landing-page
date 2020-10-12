@@ -763,13 +763,13 @@ body {
     text-align: center; }
   .section__progress .img__devices img {
     width: 400px;
-    height: auto; }
-  .section .img__devices {
-    height: 100px; } }
+    height: auto; } }
 
 @media screen and (max-width: 576px) {
   .section__hero {
     height: 400px; }
   .section__progress .img__devices img {
     width: 350px;
-    height: auto; } }
+    height: auto; }
+  .section__img .img__discord {
+    height: 100px; } }

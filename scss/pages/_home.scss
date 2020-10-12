@@ -165,9 +165,6 @@
                 }
             }
         }
-        .img__devices {
-            height: 100px;
-        }
     }
 }
 
@@ -183,6 +180,12 @@
                     width: 350px;
                     height: auto;
                 }
+            }
+        }
+
+        &__img {
+            .img__discord {
+                height: 100px;
             }
         }
     }
