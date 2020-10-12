@@ -23,7 +23,7 @@
     }
 
     &__container {
-        margin-top: 70px;
+        margin-top: 100px;
     }
     &__title {
         &--1 {
@@ -38,9 +38,68 @@
     &__img {
         display: flex;
         justify-content: center;
+        .img__discord {
+            height: 150px;
+        }
+
         img {
             height: 350px;
             width: auto;
+        }
+    }
+    &__content {
+        .platform {
+            &__images {
+                display: flex;
+                justify-content: center;
+            }
+            &__image {
+                margin-right: 25px;
+                display: flex;
+                align-items: center;
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+
+    &__features {
+        position: relative;
+        .bg__container {
+            display: flex;
+            justify-content: flex-end;
+        }
+        &-bg {
+            margin-top: -500px;
+            background-position: center;
+            background-size: cover;
+            height: 662px;
+            width: 600px;
+            background-repeat: no-repeat;
+            background-image: url("../assets/img/features-bg.png");
+            img {
+                height: 600px;
+                width: auto;
+            }
+        }
+    }
+    &__demo {
+        .bg__container {
+            display: flex;
+            justify-content: flex-start;
+            position: relative;
+        }
+
+        &-bg {
+            position: absolute;
+            background-position: center;
+            background-size: cover;
+            height: 400px;
+            width: 488px;
+            background-repeat: no-repeat;
+            background-image: url("../assets/img/demo-bg.png");
+            margin-top: -100px;
         }
     }
 }

@@ -4,3 +4,11 @@
 .u_center_text {
     text-align: center;
 }
+.flex {
+    display: flex;
+}
+.align {
+    &__right {
+        text-align: right;
+    }
+}
