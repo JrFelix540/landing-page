@@ -5,13 +5,17 @@
 
 .grid-of {
     &-2 {
+        display: -ms-grid;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        -ms-grid-columns: 1fr 1fr;
         grid-column-gap: 40px;
     }
 
     &-3 {
+        display: -ms-grid;
         display: grid;
+        -ms-grid-columns: 1fr 1fr 1fr;
         grid-template-columns: repeat(3, 1fr);
         grid-column-gap: 40px;
         grid-row-gap: 120px;
