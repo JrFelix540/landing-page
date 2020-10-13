@@ -12,6 +12,20 @@
         text-align: right;
     }
 }
+.from {
+    transition: opacity 250ms ease-in, transform 400ms ease-in;
+    opacity: 0;
+    &.appear {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    &__right {
+        transform: translateX(50%);
+    }
+    &__left {
+        transform: translateX(-50%);
+    }
+}
 @media screen and (max-width: 1024px) {
     .next__line {
         display: inline;
