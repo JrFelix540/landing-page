@@ -128,6 +128,9 @@
         }
     }
     .text {
+        &__primary {
+            text-align: center;
+        }
         &__secondary {
             line-height: 1.2;
         }

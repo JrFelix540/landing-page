@@ -503,6 +503,8 @@ body {
 @media screen and (max-width: 576px) {
   .heading__primary {
     font-size: 36px; }
+  .text__primary {
+    text-align: center; }
   .text__secondary {
     line-height: 1.2; } }
 
