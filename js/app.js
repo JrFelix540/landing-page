@@ -44,3 +44,29 @@ faders.forEach(fader => {
 slides.forEach( slider => {
   appearOnScroll.observe(slider)
 })
+
+// mobile menu
+
+const menuIcon = document.querySelector('.menu__btn')
+
+const toggleMenu = () => {
+  if(!showMenu){
+    console.log(showMenu)
+    menuIcon.classList.add('close')
+
+
+    showMenu = true
+        
+  } else {
+    menuIcon.classList.remove('close')
+    showMenu = false
+    console.log(showMenu)
+  }
+
+  
+}
+
+menuIcon.addEventListener('click', toggleMenu)
+
+let showMenu = false
+

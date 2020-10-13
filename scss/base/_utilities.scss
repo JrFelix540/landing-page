@@ -12,6 +12,9 @@
         text-align: right;
     }
 }
+.uppercase {
+    text-transform: uppercase;
+}
 .from {
     transition: opacity 250ms ease-in, transform 400ms ease-in;
     opacity: 0;

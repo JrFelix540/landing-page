@@ -1,0 +1,23 @@
+.menu__btn {
+    &.close {
+        .btn__line {
+            &:nth-child(1) {
+                transform: rotate(45deg);
+            }
+            &:nth-child(2) {
+                display: none;
+            }
+            &:nth-child(3) {
+                transform: rotate(-45deg);
+            }
+        }
+    }
+
+    .btn__line {
+        width: 28px;
+        height: 3px;
+        margin: 0 0 5px 0;
+        background-color: $color-primary;
+        @include easeOut;
+    }
+}

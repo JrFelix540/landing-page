@@ -1,0 +1,43 @@
+.card {
+    height: 450px;
+    display: flex;
+    box-shadow: 0px 1px 50px 3px rgba($color-black, 0.25);
+    border-radius: 30px;
+    &__content {
+        background-color: $color-primary;
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 0 30px;
+    }
+    &__text {
+        margin-bottom: 40px;
+    }
+    &__form {
+        background-color: $color-white;
+        flex: 1;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding-top: 30px;
+    }
+
+    &__title {
+        margin-bottom: 40px;
+    }
+}
+@media screen and (max-width: 576px) {
+    .card {
+        flex-direction: column;
+        height: auto;
+
+        &__content {
+            padding: 30px;
+        }
+        &__form {
+            padding: 30px;
+        }
+    }
+}

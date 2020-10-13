@@ -1,0 +1,34 @@
+.form {
+    &__group {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        background-color: $color-gray-light;
+        padding: 10px 15px;
+    }
+
+    &__input {
+        padding: 7.5px;
+        border: none;
+        background: $color-gray-light;
+        font-family: "Rubik";
+        font-size: 16px;
+        font-weight: 500;
+        width: 300px;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .form {
+        &__input {
+            width: 200px;
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+    .form {
+        &__input {
+            width: 150px;
+            padding: 5px;
+        }
+    }
+}

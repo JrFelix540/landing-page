@@ -3,6 +3,8 @@
         padding: 10px 30px;
         border-radius: 10px;
         border: 2px solid $color-primary;
+        color: $color-primary;
+        background-color: $color-white;
     }
 
     &__secondary {
@@ -13,5 +15,21 @@
         font-size: 18px;
         font-family: "Rubik";
         text-decoration: none;
+    }
+
+    &__tertiary {
+        padding: 10px 50px;
+        border-radius: 40px;
+        border: 2px solid $color-white;
+        background-color: $color-primary;
+        color: $color-white;
+    }
+
+    &__form {
+        padding: 10px 70px;
+        border-radius: 40px;
+        background-color: $color-primary;
+        color: $color-white;
+        border: none;
     }
 }
