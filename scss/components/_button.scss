@@ -1,10 +1,19 @@
 .btn {
+    cursor: pointer;
     &__primary {
         padding: 10px 30px;
         border-radius: 10px;
         border: 2px solid $color-primary;
         color: $color-primary;
         background-color: $color-white;
+
+        &--1 {
+            padding: 10px 30px;
+            border-radius: 10px;
+            border: none;
+            background-color: $color-primary;
+            color: $color-white;
+        }
     }
 
     &__secondary {

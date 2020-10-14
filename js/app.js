@@ -70,3 +70,33 @@ menuIcon.addEventListener('click', toggleMenu)
 
 let showMenu = false
 
+
+
+
+
+
+
+// Cookie
+const cookieContainer = document.querySelector('.section__cookie')
+const acceptCookie = document.querySelector('#cookieAllow')
+const denyCookie = document.querySelector('#cookieDeny')
+
+
+
+
+
+const showTrue = localStorage.getItem('cookieAccept')
+if (!showTrue){
+  cookieContainer.classList.add('show')
+}
+
+acceptCookie.addEventListener('click', () => {
+  localStorage.setItem('cookieAccept', 'true')
+  cookieContainer.classList.remove('show')
+})
+
+
+denyCookie.addEventListener('click', () => {
+  localStorage.setItem('cookieAccept', 'false')
+  cookieContainer.classList.remove('show')
+})

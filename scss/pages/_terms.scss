@@ -1,0 +1,38 @@
+.card__terms {
+    box-shadow: 0px 1px 50px 3px rgba($color-black, 0.25);
+    margin-bottom: 50px;
+    .card {
+        &__logo {
+            margin-right: 40px;
+            img {
+                height: 40px;
+            }
+        }
+        &__header {
+            background-color: $color-primary;
+            display: flex;
+            align-items: center;
+            padding: 10px 15px;
+            margin-bottom: 40px;
+        }
+        &__body {
+            padding: 50px;
+        }
+        &__title {
+            margin-bottom: 0;
+
+            .heading__secondary {
+                margin-top: 10px;
+            }
+        }
+        &__heading {
+            margin: 40px 0;
+        }
+        &__footer {
+            padding: 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+}

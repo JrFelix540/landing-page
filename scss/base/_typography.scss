@@ -88,6 +88,19 @@
         }
         &--2 {
             color: $color-white;
+            font-family: "Roboto";
+        }
+        &--3 {
+            color: $color-black;
+            font-family: "Roboto";
+            font-size: 30px;
+            font-weight: 700;
+        }
+        &--4 {
+            color: $color-black;
+            font-family: "Roboto";
+            font-size: 24px;
+            font-weight: 700;
         }
     }
 }
@@ -103,11 +116,26 @@
     }
     &__primary {
         font-weight: 300;
-        font-size: 15px;
+        font-size: 16px;
         font-family: "Rubik";
         line-height: 40px;
         color: $color-text;
         letter-spacing: 1px;
+
+        &--1 {
+            font-weight: 400;
+            font-family: "Roboto";
+            font-size: 16px;
+            color: rgba($color-black, 0.6);
+            line-height: 1.5;
+        }
+        &--2 {
+            font-weight: 400;
+            font-family: "Rubik";
+            font-size: 16px;
+            color: rgba($color-black, 0.6);
+            line-height: 1.2;
+        }
     }
     &__copyright {
         font-family: "Rubik";
@@ -116,10 +144,13 @@
         line-height: 40px;
         color: $color-white;
     }
-    &__helper {
-        font-family: "Rubik";
+}
+.card {
+    &__download {
         font-size: 16px;
-        color: $color-gray;
+        font-family: "Roboto";
+        text-decoration: none;
+        color: $color-primary;
         font-weight: 500;
     }
 }
@@ -131,6 +162,15 @@
         line-height: 27px;
         font-family: "Rubik";
         text-decoration: none;
+    }
+}
+
+.link {
+    &__primary {
+        font-family: "Roboto";
+        font-weight: 400;
+        font-size: 16px;
+        color: rgba($color-primary, 0.9);
     }
 }
 @media screen and (max-width: 1024px) {

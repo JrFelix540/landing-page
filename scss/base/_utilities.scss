@@ -15,6 +15,22 @@
 .uppercase {
     text-transform: uppercase;
 }
+.bold {
+    font-weight: 900;
+}
+.margin__bottom {
+    &--medium {
+        margin-bottom: 20px;
+    }
+}
+.margin {
+    &__large {
+        margin: 40px 0;
+    }
+}
+.near__invisible {
+    opacity: 0.3;
+}
 .from {
     transition: opacity 250ms ease-in, transform 400ms ease-in;
     opacity: 0;
