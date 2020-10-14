@@ -47,20 +47,37 @@ slides.forEach( slider => {
 
 // mobile menu
 
-const menuIcon = document.querySelector('.menu__btn')
+const menuIcon = document.querySelector('.mobile__menu-btn')
+const menuBg = document.querySelector('.mobile__menu-bg')
+const menuList = document.querySelector('.mobile__menu-list')
+const mobileLinks = document.querySelectorAll('.mobile__menu-link')
+
+const hideMenuFunction = () => {
+  menuIcon.classList.remove('close')
+    menuBg.classList.remove('show')
+    menuList.classList.remove('show')
+    showMenu = false
+}
+
+const displayMenuFunction = () => {
+    menuIcon.classList.add('close')
+    menuBg.classList.add('show')
+    menuList.classList.add('show')
+    showMenu = true
+}
+
+
+for(const link of mobileLinks){
+  link.addEventListener('click', hideMenuFunction)
+}
 
 const toggleMenu = () => {
   if(!showMenu){
-    console.log(showMenu)
-    menuIcon.classList.add('close')
-
-
-    showMenu = true
+    displayMenuFunction()
         
   } else {
-    menuIcon.classList.remove('close')
-    showMenu = false
-    console.log(showMenu)
+    hideMenuFunction()
+    
   }
 
   

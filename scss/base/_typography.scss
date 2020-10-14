@@ -173,6 +173,18 @@
         color: rgba($color-primary, 0.9);
     }
 }
+.mobile {
+    &__menu {
+        &-link {
+            font-family: "Rubik";
+            color: $color-white;
+            font-size: 24px;
+            font-weight: 500;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+    }
+}
 @media screen and (max-width: 1024px) {
     .heading {
         &__primary {
