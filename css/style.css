@@ -692,19 +692,18 @@ body {
     opacity: 1; }
 
 .mobile__menu-list {
-  position: absolute;
+  position: fixed;
   z-index: 2000;
-  display: none;
+  display: flex;
+  opacity: 0;
   justify-content: center;
   flex-direction: column;
   width: 100%;
-  transition: display 0.5s ease;
-  transition-delay: 5s;
+  transition: opacity 0.2s ease;
+  transition-delay: 0.3s;
   margin-top: 60px; }
   .mobile__menu-list.show {
-    display: flex; }
-    .mobile__menu-list.show .mobile__menu-link {
-      transform: translateX(0); }
+    opacity: 1; }
 
 .mobile__menu-item {
   position: relative;
@@ -714,11 +713,10 @@ body {
 
 .mobile__menu-link {
   z-index: 2000;
-  transform: translateX(-50%);
-  transition: transform 0.35s ease-in-out; }
+  display: flex; }
 
 .mobile__menu-btn {
-  position: absolute;
+  position: fixed;
   top: 30px;
   right: 30px;
   height: 50px;
