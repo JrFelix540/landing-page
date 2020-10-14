@@ -1010,7 +1010,8 @@ body {
   .section__cookie {
     width: 100%;
     bottom: 0;
-    right: 0; } }
+    right: 0;
+    border-radius: 0; } }
 
 @media screen and (max-width: 576px) {
   .section__hero {
@@ -1065,7 +1066,10 @@ body {
     padding: 10px 15px;
     margin-bottom: 40px; }
   .card__terms .card__body {
-    padding: 50px; }
+    padding: 50px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    max-height: 70vh; }
   .card__terms .card__title {
     margin-bottom: 0; }
     .card__terms .card__title .heading__secondary {
