@@ -553,6 +553,8 @@ body {
 @media screen and (max-width: 576px) {
   .heading__primary {
     font-size: 36px; }
+  .heading__secondary--3 {
+    font-size: 18px; }
   .heading__tertiary {
     font-size: 24px; }
   .text__primary {
@@ -959,9 +961,18 @@ body {
     .section__cookie .cookie__container .cookie__content {
       padding: 15px 10px; }
     .section__cookie .cookie__container .cookie__text {
-      margin-bottom: 20px; }
+      margin: 15px 0 20px 0; }
     .section__cookie .cookie__container .cookie__buttons {
-      margin-bottom: 20px; }
+      display: flex;
+      justify-content: flex-end;
+      margin-bottom: 20px;
+      align-items: center; }
+      .section__cookie .cookie__container .cookie__buttons div:first-child {
+        margin-right: 10px; }
+
+@media screen and (min-width: 1600px) {
+  .section__cookie {
+    width: 35%; } }
 
 @media screen and (max-width: 1024px) {
   .section__hero .hero__img {
@@ -1001,13 +1012,11 @@ body {
   .section__img .img__discord {
     height: 100px; }
   .section__cookie {
-    width: 90%; }
-    .section__cookie .cookie__buttons {
-      display: flex; }
-      .section__cookie .cookie__buttons div:first-child {
-        margin-right: 10px; }
-      .section__cookie .cookie__buttons .btn {
-        padding: 5px 7.5px; }
+    width: 100%; }
+    .section__cookie .cookie__buttons div:first-child {
+      margin-right: 10px; }
+    .section__cookie .cookie__buttons .btn {
+      padding: 5px 7.5px; }
     .section__cookie .cookie__img {
       display: none !important; } }
 

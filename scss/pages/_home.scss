@@ -141,15 +141,33 @@
                     padding: 15px 10px;
                 }
                 &__text {
-                    margin-bottom: 20px;
+                    margin: 15px 0 20px 0;
                 }
                 &__buttons {
+                    display: flex;
+                    justify-content: flex-end;
                     margin-bottom: 20px;
+                    align-items: center;
+
+                    div {
+                        &:first-child {
+                            margin-right: 10px;
+                        }
+                    }
                 }
             }
         }
     }
 }
+
+@media screen and (min-width: 1600px) {
+    .section {
+        &__cookie {
+            width: 35%;
+        }
+    }
+}
+
 @media screen and (max-width: 1024px) {
     .section {
         &__hero {
@@ -233,10 +251,9 @@
         }
 
         &__cookie {
-            width: 90%;
+            width: 100%;
             .cookie {
                 &__buttons {
-                    display: flex;
                     div {
                         &:first-child {
                             margin-right: 10px;

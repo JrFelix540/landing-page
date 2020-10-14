@@ -189,6 +189,11 @@
         &__primary {
             font-size: 36px;
         }
+        &__secondary {
+            &--3 {
+                font-size: 18px;
+            }
+        }
         &__tertiary {
             font-size: 24px;
         }
