@@ -1012,7 +1012,8 @@ body {
   .section__img .img__discord {
     height: 100px; }
   .section__cookie {
-    width: 100%; }
+    width: 100%;
+    right: 0; }
     .section__cookie .cookie__buttons div:first-child {
       margin-right: 10px; }
     .section__cookie .cookie__buttons .btn {
