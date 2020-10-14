@@ -716,7 +716,7 @@ body {
   display: flex; }
 
 .mobile__menu-btn {
-  position: fixed;
+  position: absolute;
   top: 30px;
   right: 30px;
   height: 50px;
@@ -725,15 +725,17 @@ body {
   align-items: center;
   justify-content: center;
   z-index: 2000; }
-  .mobile__menu-btn.close .btn__line {
-    transform: translateX(-50px);
-    background-color: transparent; }
-    .mobile__menu-btn.close .btn__line::before {
-      transform: rotate(45deg) translate(35px, -35px);
-      background-color: #ffffff; }
-    .mobile__menu-btn.close .btn__line::after {
-      transform: rotate(-45deg) translate(35px, 35px);
-      background-color: #ffffff; }
+  .mobile__menu-btn.close {
+    position: fixed; }
+    .mobile__menu-btn.close .btn__line {
+      transform: translateX(-50px);
+      background-color: transparent; }
+      .mobile__menu-btn.close .btn__line::before {
+        transform: rotate(45deg) translate(35px, -35px);
+        background-color: #ffffff; }
+      .mobile__menu-btn.close .btn__line::after {
+        transform: rotate(-45deg) translate(35px, 35px);
+        background-color: #ffffff; }
   .mobile__menu-btn .btn__line, .mobile__menu-btn .btn__line::before, .mobile__menu-btn .btn__line::after {
     width: 40px;
     height: 5px;
