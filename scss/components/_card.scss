@@ -32,6 +32,18 @@
     .card {
         flex-direction: column;
         height: auto;
+        margin-bottom: 30px;
+
+        &__title {
+            margin-bottom: 10px;
+
+            .heading__tertiary {
+                text-align: center;
+            }
+        }
+        &.reverse {
+            flex-direction: column-reverse;
+        }
 
         &__content {
             padding: 30px;
