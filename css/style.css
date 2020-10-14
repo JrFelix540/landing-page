@@ -698,8 +698,7 @@ body {
   justify-content: center;
   flex-direction: column;
   width: 100%;
-  transition: display 0.5s ease-in;
-  transition-property: display;
+  transition: display 0.5s ease;
   transition-delay: 5s;
   margin-top: 60px; }
   .mobile__menu-list.show {
@@ -738,7 +737,7 @@ body {
       transform: rotate(-45deg) translate(35px, 35px);
       background-color: #ffffff; }
   .mobile__menu-btn .btn__line, .mobile__menu-btn .btn__line::before, .mobile__menu-btn .btn__line::after {
-    width: 50px;
+    width: 40px;
     height: 5px;
     border-radius: 5px;
     background-color: #0055a7;

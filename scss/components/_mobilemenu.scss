@@ -22,8 +22,7 @@
         justify-content: center;
         flex-direction: column;
         width: 100%;
-        transition: display 0.5s ease-in;
-        transition-property: display;
+        transition: display 0.5s ease;
         transition-delay: 5s;
         margin-top: 60px;
         &.show {
@@ -75,7 +74,7 @@
             &,
             &::before,
             &::after {
-                width: 50px;
+                width: 40px;
                 height: 5px;
                 border-radius: 5px;
                 background-color: $color-primary;
