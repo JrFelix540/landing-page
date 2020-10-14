@@ -999,7 +999,17 @@ body {
   .section__img img {
     height: 300px; }
   .section__img .img__discord {
-    height: 100px; } }
+    height: 100px; }
+  .section__cookie {
+    width: 90%; }
+    .section__cookie .cookie__buttons {
+      display: flex; }
+      .section__cookie .cookie__buttons div:first-child {
+        margin-right: 10px; }
+      .section__cookie .cookie__buttons .btn {
+        padding: 5px 7.5px; }
+    .section__cookie .cookie__img {
+      display: none !important; } }
 
 .body__signin {
   height: 100vh;

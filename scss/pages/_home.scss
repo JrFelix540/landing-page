@@ -231,5 +231,26 @@
                 height: 100px;
             }
         }
+
+        &__cookie {
+            width: 90%;
+            .cookie {
+                &__buttons {
+                    display: flex;
+                    div {
+                        &:first-child {
+                            margin-right: 10px;
+                        }
+                    }
+
+                    .btn {
+                        padding: 5px 7.5px;
+                    }
+                }
+                &__img {
+                    display: none !important;
+                }
+            }
+        }
     }
 }
