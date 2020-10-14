@@ -225,6 +225,16 @@
     }
 }
 
+@media screen and (max-width: 768px) {
+    .section {
+        &__cookie {
+            width: 100%;
+            bottom: 0;
+            right: 0;
+        }
+    }
+}
+
 @media screen and (max-width: 576px) {
     .section {
         &__hero {
@@ -252,9 +262,6 @@
         }
 
         &__cookie {
-            width: 90%;
-            right: 0;
-            bottom: 0;
             .cookie {
                 &__buttons {
                     div {

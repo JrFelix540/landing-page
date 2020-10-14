@@ -36,3 +36,16 @@
         }
     }
 }
+
+@media screen and (max-width: 1024px) {
+    .card__terms {
+        .card {
+            &__footer {
+                flex-direction: column;
+                .btn {
+                    padding: 10px 20px;
+                }
+            }
+        }
+    }
+}

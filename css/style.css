@@ -1000,6 +1000,12 @@ body {
     width: 400px;
     height: auto; } }
 
+@media screen and (max-width: 768px) {
+  .section__cookie {
+    width: 100%;
+    bottom: 0;
+    right: 0; } }
+
 @media screen and (max-width: 576px) {
   .section__hero {
     height: 400px; }
@@ -1012,16 +1018,12 @@ body {
     height: 300px; }
   .section__img .img__discord {
     height: 100px; }
-  .section__cookie {
-    width: 90%;
-    right: 0;
-    bottom: 0; }
-    .section__cookie .cookie__buttons div:first-child {
-      margin-right: 10px; }
-    .section__cookie .cookie__buttons .btn {
-      padding: 5px 7.5px; }
-    .section__cookie .cookie__img {
-      display: none !important; } }
+  .section__cookie .cookie__buttons div:first-child {
+    margin-right: 10px; }
+  .section__cookie .cookie__buttons .btn {
+    padding: 5px 7.5px; }
+  .section__cookie .cookie__img {
+    display: none !important; } }
 
 .body__signin {
   height: 100vh;
@@ -1069,3 +1071,9 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center; }
+
+@media screen and (max-width: 1024px) {
+  .card__terms .card__footer {
+    flex-direction: column; }
+    .card__terms .card__footer .btn {
+      padding: 10px 20px; } }
