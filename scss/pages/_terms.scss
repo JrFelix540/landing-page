@@ -33,6 +33,12 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+
+            .btn {
+                &:first-child {
+                    margin-right: 10px;
+                }
+            }
         }
     }
 }
@@ -40,10 +46,45 @@
 @media screen and (max-width: 1024px) {
     .card__terms {
         .card {
+            &__body {
+                padding: 25px;
+            }
             &__footer {
-                flex-direction: column;
+                flex-direction: row;
+                justify-content: space-between;
+                .card__download {
+                    margin-bottom: 40px;
+                }
+                .card__buttons {
+                    .btn {
+                        &:first-child {
+                            margin-right: 15px;
+                        }
+                    }
+                }
                 .btn {
                     padding: 10px 20px;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 576px) {
+    .card__terms {
+        .card {
+            &__header {
+                flex-direction: column;
+                justify-content: center;
+            }
+            &__body {
+                padding: 20px;
+            }
+            &__footer {
+                flex-direction: column;
+                padding: 20px;
+                .card__buttons {
+                    display: flex;
+                    justify-content: space-between;
                 }
             }
         }
