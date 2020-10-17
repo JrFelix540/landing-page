@@ -29,7 +29,18 @@
     }
 }
 .near__invisible {
-    opacity: 0.3;
+    &-container {
+        position: absolute;
+        bottom: 210px;
+        // right: 0;
+        width: 100%;
+    }
+
+    &-bg {
+        background-color: rgba($color-bg, 0.7);
+        height: 50px;
+        width: 90%;
+    }
 }
 .from {
     transition: opacity 250ms ease-in, transform 400ms ease-in;

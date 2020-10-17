@@ -594,8 +594,15 @@ body {
 .margin__large {
   margin: 40px 0; }
 
-.near__invisible {
-  opacity: 0.3; }
+.near__invisible-container {
+  position: absolute;
+  bottom: 210px;
+  width: 100%; }
+
+.near__invisible-bg {
+  background-color: rgba(254, 248, 245, 0.7);
+  height: 50px;
+  width: 90%; }
 
 .from {
   transition: opacity 250ms ease-in, transform 400ms ease-in;
