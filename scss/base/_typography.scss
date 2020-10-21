@@ -17,6 +17,7 @@
         /* Safari, Android, iOS */
             url("../assets/fonts/rubik-v10-latin-regular.svg#Rubik")
             format("svg"); /* Legacy iOS */
+    font-display: swap;
 }
 
 /* roboto-regular - latin */
@@ -38,6 +39,8 @@
         /* Safari, Android, iOS */
             url("../assets/fonts/roboto-v20-latin-regular.svg#Roboto")
             format("svg"); /* Legacy iOS */
+
+    font-display: swap;
 }
 
 .menu {
