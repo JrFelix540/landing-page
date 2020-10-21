@@ -18,9 +18,9 @@
     &-list {
         position: fixed;
         z-index: 2000;
-        display: flex;
-        opacity: 0;
         justify-content: center;
+        display: none;
+        opacity: 0;
         flex-direction: column;
         width: 100%;
         transition: opacity 0.2s ease;
@@ -28,6 +28,11 @@
         margin-top: 60px;
         &.show {
             opacity: 1;
+            display: flex;
+
+            .mobile__menu-link {
+                opacity: 1;
+            }
         }
     }
     &-item {
@@ -39,6 +44,8 @@
     &-link {
         z-index: 2000;
         display: flex;
+        opacity: 0;
+        transition: all 0.3s ease-in;
     }
     &-btn {
         position: absolute;

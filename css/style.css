@@ -701,16 +701,19 @@ body {
 .mobile__menu-list {
   position: fixed;
   z-index: 2000;
-  display: flex;
-  opacity: 0;
   justify-content: center;
+  display: none;
+  opacity: 0;
   flex-direction: column;
   width: 100%;
   transition: opacity 0.2s ease;
   transition-delay: 0.3s;
   margin-top: 60px; }
   .mobile__menu-list.show {
-    opacity: 1; }
+    opacity: 1;
+    display: flex; }
+    .mobile__menu-list.show .mobile__menu-link {
+      opacity: 1; }
 
 .mobile__menu-item {
   position: relative;
@@ -720,7 +723,9 @@ body {
 
 .mobile__menu-link {
   z-index: 2000;
-  display: flex; }
+  display: flex;
+  opacity: 0;
+  transition: all 0.3s ease-in; }
 
 .mobile__menu-btn {
   position: absolute;
