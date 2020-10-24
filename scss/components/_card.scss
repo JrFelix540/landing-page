@@ -83,6 +83,13 @@
         &__form {
             padding: 30px;
         }
+        &__terms {
+            .card {
+                &__logo {
+                    margin-right: 0;
+                }
+            }
+        }
     }
     .modal {
         .card__terms.container {
@@ -102,6 +109,12 @@
             }
             .card__footer {
                 flex-direction: row;
+            }
+            .card__logo {
+                margin-right: 0;
+            }
+            .card__download {
+                margin-bottom: 0;
             }
         }
     }

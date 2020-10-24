@@ -833,6 +833,8 @@ body {
       padding: 30px; }
     .card__form {
       padding: 30px; }
+    .card__terms .card__logo {
+      margin-right: 0; }
   .modal .card__terms.container {
     margin: 0 20px;
     padding: 0; }
@@ -843,7 +845,11 @@ body {
     .modal .card__terms.container .near__invisible-bg {
       height: 35px; }
     .modal .card__terms.container .card__footer {
-      flex-direction: row; } }
+      flex-direction: row; }
+    .modal .card__terms.container .card__logo {
+      margin-right: 0; }
+    .modal .card__terms.container .card__download {
+      margin-bottom: 0; } }
 
 .form__group {
   display: flex;
