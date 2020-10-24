@@ -838,10 +838,10 @@ body {
     padding: 0; }
     .modal .card__terms.container .near__invisible-container.container {
       padding: 0;
-      width: 80vw;
-      bottom: 35vh; }
+      width: 85vw;
+      bottom: 33vh; }
     .modal .card__terms.container .near__invisible-bg {
-      height: 30px; }
+      height: 35px; }
     .modal .card__terms.container .card__footer {
       flex-direction: row; } }
 
