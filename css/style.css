@@ -626,6 +626,13 @@ body {
   .from__left {
     transform: translateX(-50%); }
 
+.flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%; }
+
 @media screen and (max-width: 1024px) {
   .next__line {
     display: inline; } }
@@ -816,6 +823,8 @@ body {
       margin-bottom: 20px; }
     .modal .card__terms .card__body {
       padding: 20px; }
+    .modal .card__terms .card__footer {
+      display: block; }
 
 @media screen and (max-width: 576px) {
   .card {
