@@ -862,7 +862,9 @@ body {
     align-items: center;
     width: 370px; }
   .form__group-sm {
-    margin-bottom: 0px; }
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: space-between; }
   .form__group .show__password {
     cursor: pointer; }
 
