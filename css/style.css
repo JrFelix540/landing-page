@@ -841,7 +841,9 @@ body {
       width: 80vw;
       bottom: 35vh; }
     .modal .card__terms.container .near__invisible-bg {
-      height: 30px; } }
+      height: 30px; }
+    .modal .card__terms.container .card__footer {
+      flex-direction: row; } }
 
 .form__group {
   display: flex;
