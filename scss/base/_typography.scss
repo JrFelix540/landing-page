@@ -189,6 +189,10 @@
     }
 }
 .checkbox {
+    &__text {
+        text-align: left !important;
+        line-height: 1;
+    }
     &__link {
         color: $color-primary;
         cursor: pointer;
