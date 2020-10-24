@@ -61,6 +61,13 @@
         }
     }
 }
+@media screen and (max-width: 768px) {
+    .card {
+        &__form {
+            padding: 30px 20px;
+        }
+    }
+}
 
 @media screen and (max-width: 576px) {
     .card {
