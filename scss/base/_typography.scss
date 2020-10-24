@@ -188,6 +188,13 @@
         }
     }
 }
+.checkbox {
+    &__link {
+        color: $color-primary;
+        cursor: pointer;
+        text-decoration: underline;
+    }
+}
 @media screen and (max-width: 1024px) {
     .heading {
         &__primary {

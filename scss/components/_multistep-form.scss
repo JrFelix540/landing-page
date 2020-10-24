@@ -1,0 +1,11 @@
+.tab {
+    display: none;
+
+    &__buttons {
+        display: flex;
+        justify-content: flex-end;
+        .btn:first-child {
+            margin-right: 10px;
+        }
+    }
+}

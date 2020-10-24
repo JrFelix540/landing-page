@@ -554,6 +554,11 @@ body {
   text-decoration: none;
   text-transform: uppercase; }
 
+.checkbox__link {
+  color: #0055a7;
+  cursor: pointer;
+  text-decoration: underline; }
+
 @media screen and (max-width: 1024px) {
   .heading__primary {
     line-height: 1.2; }
@@ -602,7 +607,7 @@ body {
   width: 100%; }
 
 .near__invisible-bg {
-  background-color: rgba(254, 248, 245, 0.7);
+  background-color: rgba(255, 255, 255, 0.7);
   height: 50px;
   width: 90%; }
 
@@ -661,6 +666,8 @@ body {
     background-color: #0055a7;
     color: #ffffff;
     border: none; }
+    .btn__form--1 {
+      padding: 10px 30px; }
 
 .feature__box {
   background: #ffffff;
@@ -789,6 +796,23 @@ body {
   .card__title {
     margin-bottom: 40px; }
 
+.modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%; }
+  .modal .card__terms {
+    background-color: #ffffff; }
+    .modal .card__terms .near__invisible-container {
+      bottom: 40vh; }
+    .modal .card__terms .near__invisible-bg {
+      width: 95%; }
+    .modal .card__terms .card__header {
+      margin-bottom: 20px; }
+    .modal .card__terms .card__body {
+      padding: 20px; }
+
 @media screen and (max-width: 576px) {
   .card {
     flex-direction: column;
@@ -803,7 +827,16 @@ body {
     .card__content {
       padding: 30px; }
     .card__form {
-      padding: 30px; } }
+      padding: 30px; }
+  .modal .card__terms.container {
+    margin: 0 20px;
+    padding: 0; }
+    .modal .card__terms.container .near__invisible-container.container {
+      padding: 0;
+      width: 80vw;
+      bottom: 35vh; }
+    .modal .card__terms.container .near__invisible-bg {
+      height: 30px; } }
 
 .form__group {
   display: flex;
@@ -811,6 +844,18 @@ body {
   margin-bottom: 20px;
   background-color: #f4f8f7;
   padding: 10px 15px; }
+  .form__group--1 {
+    display: flex;
+    background-color: #f4f8f7;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    align-items: center; }
+  .form__group--2 {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center; }
+  .form__group-sm {
+    margin-bottom: 0px; }
 
 .form__input {
   padding: 7.5px;
@@ -820,6 +865,19 @@ body {
   font-size: 16px;
   font-weight: 500;
   width: 300px; }
+  .form__input-select {
+    border: none;
+    background-color: #f4f8f7;
+    font-family: "Rubik";
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px;
+    max-width: 120px; }
+  .form__input-checkbox {
+    height: 20px;
+    width: 20px;
+    border: 1px solid #402b2b;
+    margin-right: 10px; }
 
 @media screen and (max-width: 1024px) {
   .form__input {
@@ -829,6 +887,14 @@ body {
   .form__input {
     width: 150px;
     padding: 5px; } }
+
+.tab {
+  display: none; }
+  .tab__buttons {
+    display: flex;
+    justify-content: flex-end; }
+    .tab__buttons .btn:first-child {
+      margin-right: 10px; }
 
 .header__container {
   display: flex;
@@ -1125,6 +1191,15 @@ body {
   position: relative;
   display: flex;
   flex-direction: column; }
+  .body__signin-blackout {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.65);
+    z-index: 1010;
+    display: none; }
   .body__signin .background__top {
     position: absolute;
     top: 0;
@@ -1156,7 +1231,7 @@ body {
     padding: 50px;
     overflow-y: scroll;
     overflow-x: hidden;
-    height: 40vh; }
+    height: 30vh; }
   .card__terms .card__title {
     margin-bottom: 0; }
     .card__terms .card__title .heading__secondary {

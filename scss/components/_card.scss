@@ -28,6 +28,37 @@
         margin-bottom: 40px;
     }
 }
+
+.modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    .card {
+        &__terms {
+            background-color: $color-white;
+
+            .near__invisible {
+                &-container {
+                    bottom: 40vh;
+                }
+                &-bg {
+                    width: 95%;
+                }
+            }
+            .card {
+                &__header {
+                    margin-bottom: 20px;
+                }
+                &__body {
+                    padding: 20px;
+                }
+            }
+        }
+    }
+}
+
 @media screen and (max-width: 576px) {
     .card {
         flex-direction: column;
@@ -50,6 +81,24 @@
         }
         &__form {
             padding: 30px;
+        }
+    }
+    .modal {
+        .card__terms.container {
+            margin: 0 20px;
+            padding: 0;
+
+            .near__invisible {
+                &-container.container {
+                    padding: 0;
+                    width: 80vw;
+                    bottom: 35vh;
+                }
+
+                &-bg {
+                    height: 30px;
+                }
+            }
         }
     }
 }
