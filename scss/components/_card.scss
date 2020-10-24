@@ -67,7 +67,7 @@
         width: 90vw;
 
         &__title {
-            margin-bottom: 10px;
+            margin-bottom: 24px;
 
             .heading__tertiary {
                 text-align: center;
@@ -109,6 +109,7 @@
             }
             .card__footer {
                 flex-direction: row;
+                margin: 10px 0;
             }
             .card__logo {
                 margin-right: 0;
