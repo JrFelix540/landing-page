@@ -6,6 +6,7 @@
         background-color: $color-gray-light;
         padding: 10px 15px;
         width: 370px;
+
         &--1 {
             display: flex;
             background-color: $color-gray-light;
@@ -22,6 +23,10 @@
 
         &-sm {
             margin-bottom: 0px;
+        }
+
+        .show__password {
+            cursor: pointer;
         }
     }
 

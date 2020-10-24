@@ -863,6 +863,8 @@ body {
     width: 370px; }
   .form__group-sm {
     margin-bottom: 0px; }
+  .form__group .show__password {
+    cursor: pointer; }
 
 .form__input {
   padding: 7.5px;

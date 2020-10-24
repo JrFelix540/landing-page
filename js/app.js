@@ -202,6 +202,19 @@ passwordInput &&
         passwordStrengthText.style.color = strength.color;
     });
 
+// Toggle show password
+
+const showPasswordBtn = document.querySelector(".show__password");
+const showPasswordInput = document.querySelector("#password");
+let showPasswordStatus = false;
+showPasswordBtn &&
+    showPasswordBtn.addEventListener("click", () => {
+        showPasswordStatus = !showPasswordStatus;
+        showPasswordStatus
+            ? (showPasswordInput.type = "text")
+            : (showPasswordInput.type = "password");
+    });
+
 // Terms of service modal
 const openTermsBtn = document.querySelector(`#openTermsBtn`);
 const closeTermsBtn = document.querySelector(`#closeTermsBtn`);
