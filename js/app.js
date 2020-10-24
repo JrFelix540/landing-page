@@ -123,9 +123,9 @@ const showTab = (n) => {
     }
 
     if (n === tabs.length - 1) {
-        nextBtn.style.display = "none";
+        nextBtn.innerHTML = "Create Account";
     } else {
-        nextBtn.style.display = "flex";
+        nextBtn.innerHTML = "Next";
     }
 };
 

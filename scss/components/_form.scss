@@ -45,6 +45,12 @@
             font-weight: 500;
             padding: 10px;
             max-width: 120px;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            background-color: $color-gray-light;
+            background: url("../assets/img/down-arrow.png") 96% / 15%
+                no-repeat #eee;
         }
         &-checkbox {
             height: 20px;

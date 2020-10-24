@@ -881,7 +881,12 @@ body {
     font-size: 16px;
     font-weight: 500;
     padding: 10px;
-    max-width: 120px; }
+    max-width: 120px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: #f4f8f7;
+    background: url("../assets/img/down-arrow.png") 96%/15% no-repeat #eee; }
   .form__input-checkbox {
     height: 20px;
     width: 20px;
@@ -906,7 +911,8 @@ body {
       width: 120px; } }
 
 .tab {
-  display: none; }
+  display: none;
+  height: 240px; }
   .tab__buttons {
     display: flex;
     justify-content: flex-end; }
