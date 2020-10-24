@@ -821,14 +821,14 @@ body {
   .card {
     flex-direction: column;
     height: auto;
-    margin-bottom: 30px; }
+    margin-bottom: 30px;
+    width: 90vw; }
     .card__title {
       margin-bottom: 10px; }
       .card__title .heading__tertiary {
         text-align: center; }
     .card.reverse {
-      flex-direction: column-reverse;
-      width: 90vw; }
+      flex-direction: column-reverse; }
     .card__content {
       padding: 30px; }
     .card__form {
