@@ -632,6 +632,9 @@ body {
   justify-content: space-between;
   align-items: center;
   width: 100%; }
+  .flex--1 {
+    display: flex;
+    justify-content: space-between; }
 
 .hr {
   border: 0;

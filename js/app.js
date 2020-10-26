@@ -106,3 +106,14 @@ denyCookie
           cookieContainer.classList.remove("show");
       })
     : null;
+// Show Password
+const showPasswordBtn = document.querySelector(".show__password");
+const showPasswordInput = document.querySelector("#password");
+let showPasswordStatus = false;
+showPasswordBtn &&
+    showPasswordBtn.addEventListener("click", () => {
+        showPasswordStatus = !showPasswordStatus;
+        showPasswordStatus
+            ? (showPasswordInput.type = "text")
+            : (showPasswordInput.type = "password");
+    });

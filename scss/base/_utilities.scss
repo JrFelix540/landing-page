@@ -62,7 +62,13 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
+
+    &--1 {
+        display: flex;
+        justify-content: space-between;
+    }
 }
+
 .hr {
     border: 0;
     height: 1px;
