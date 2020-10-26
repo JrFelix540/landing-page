@@ -17,6 +17,7 @@ const showTab = (n) => {
         nextBtn.innerHTML = "Create Account";
     } else {
         nextBtn.innerHTML = "Next";
+        nextBtn.type = "submit";
     }
 };
 

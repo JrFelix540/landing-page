@@ -1,0 +1,43 @@
+.control {
+    display: block;
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    input {
+        position: absolute;
+        z-index: -1;
+        opacity: 0;
+
+        &:checked ~ .control__indicator {
+            background-color: $color-primary;
+        }
+
+        &:checked ~ .control__indicator:after {
+            display: block;
+        }
+    }
+
+    &__indicator {
+        position: absolute;
+        top: 9px;
+        left: 0;
+        height: 22px;
+        width: 22px;
+        background: $color-gray-light;
+
+        &:after {
+            content: "";
+            position: absolute;
+            display: none;
+            left: 8px;
+            top: 4px;
+            width: 3px;
+            height: 8px;
+            border: solid #fff;
+            border-width: 0 2px 2px 0;
+            transform: rotate(45deg);
+        }
+    }
+}
