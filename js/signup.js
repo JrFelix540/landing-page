@@ -15,9 +15,10 @@ const showTab = (n) => {
 
     if (n === tabs.length - 1) {
         nextBtn.innerHTML = "Create Account";
-        nextBtn.type = "submit";
+        // nextBtn.type = "submit";
     } else {
         nextBtn.innerHTML = "Next";
+        nextBtn.type = "button";
     }
 };
 
@@ -26,7 +27,8 @@ const prevNext = (n) => {
     currentTab = currentTab + n;
 
     if (currentTab >= tabs.length) {
-        return;
+        document.querySelector("#registerForm").submit();
+        console.log(`object`);
     }
     showTab(currentTab);
 };
