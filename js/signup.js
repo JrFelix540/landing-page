@@ -15,9 +15,9 @@ const showTab = (n) => {
 
     if (n === tabs.length - 1) {
         nextBtn.innerHTML = "Create Account";
+        nextBtn.type = "submit";
     } else {
         nextBtn.innerHTML = "Next";
-        nextBtn.type = "submit";
     }
 };
 
@@ -33,13 +33,11 @@ const prevNext = (n) => {
 
 nextBtn &&
     nextBtn.addEventListener("click", (e) => {
-        e.preventDefault();
         prevNext(1);
     });
 
 prevBtn &&
     prevBtn.addEventListener("click", (e) => {
-        e.preventDefault();
         prevNext(-1);
     });
 
