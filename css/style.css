@@ -499,6 +499,10 @@ body {
     font-size: 18px;
     color: #ffffff;
     line-height: 40px; }
+  .text__validation {
+    font-family: "Rubik";
+    font-size: 16px;
+    font-weight: 300; }
   .text__primary {
     font-weight: 300;
     font-size: 16px;
@@ -950,6 +954,19 @@ body {
         -webkit-transform: rotate(45deg);
         -ms-transform: rotate(45deg);
         transform: rotate(45deg); }
+
+.form__validation {
+  padding: 10px;
+  margin-bottom: 10px;
+  display: none; }
+  .form__validation.error {
+    background-color: #f8d7da;
+    color: #721c24;
+    display: block; }
+  .form__validation.warning {
+    background-color: #fff3cd;
+    color: #856404;
+    display: block; }
 
 @media screen and (max-width: 1024px) {
   .form__group {

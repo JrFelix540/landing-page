@@ -98,6 +98,21 @@
             }
         }
     }
+    &__validation {
+        padding: 10px;
+        margin-bottom: 10px;
+        display: none;
+        &.error {
+            background-color: $color-bg-error;
+            color: $color-text-error;
+            display: block;
+        }
+        &.warning {
+            background-color: $color-bg-warning;
+            color: $color-text-warning;
+            display: block;
+        }
+    }
 }
 @media screen and (max-width: 1024px) {
     .form {
