@@ -416,6 +416,9 @@ body {
   z-index: -10;
   overflow-x: hidden; }
 
+.body__bg-white {
+  background-color: #ffffff; }
+
 @media screen and (max-width: 576px) {
   html,
   body {
@@ -606,6 +609,9 @@ body {
 .margin__bottom--medium {
   margin-bottom: 20px; }
 
+.margin__bottom--small {
+  margin-bottom: 10px; }
+
 .margin__large {
   margin: 40px 0; }
 
@@ -639,6 +645,10 @@ body {
   .flex--1 {
     display: flex;
     justify-content: space-between; }
+  .flex--2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
 
 .hr {
   border: 0;
@@ -800,6 +810,11 @@ body {
   display: flex;
   box-shadow: 0px 1px 50px 3px rgba(0, 0, 0, 0.25);
   border-radius: 30px; }
+  .card__container {
+    box-shadow: 0px 1px 50px 3px rgba(0, 0, 0, 0.25);
+    margin: 20px 0 50px 0;
+    background-color: #ffffff;
+    padding: 50px 20px; }
   .card__content {
     background-color: #0055a7;
     flex: 1;
@@ -897,6 +912,8 @@ body {
     align-items: center;
     width: 370px;
     padding: 10px 15px; }
+  .form__group--3 {
+    width: 80% !important; }
   .form__group-sm {
     margin-bottom: 0px;
     display: flex;
@@ -917,6 +934,8 @@ body {
   width: 300px; }
   .form__input--1 {
     width: 230px; }
+  .form__input--2 {
+    width: 100%; }
   .form__input-select {
     border: none;
     background-color: #f4f8f7;
@@ -930,6 +949,10 @@ body {
     appearance: none;
     background-color: #f4f8f7;
     background: url("../assets/img/down-arrow.png") 96%/15% no-repeat #eee; }
+    .form__input-select--1 {
+      background-size: contain;
+      width: 100%;
+      max-width: none; }
   .form__input-checkbox {
     height: 20px;
     width: 20px;

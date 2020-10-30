@@ -6,6 +6,14 @@ body {
     z-index: -10;
     overflow-x: hidden;
 }
+.body {
+    &__bg {
+        &-white {
+            background-color: $color-white;
+        }
+    }
+}
+
 @media screen and (max-width: 576px) {
     html,
     body {

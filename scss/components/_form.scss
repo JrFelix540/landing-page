@@ -20,11 +20,10 @@
             align-items: center;
             width: 370px;
             padding: 10px 15px;
+        }
 
-            .checkbox {
-                &__container {
-                }
-            }
+        &--3 {
+            width: 80% !important;
         }
 
         &-sm {
@@ -53,6 +52,9 @@
         &--1 {
             width: 230px;
         }
+        &--2 {
+            width: 100%;
+        }
         &-select {
             border: none;
             background-color: $color-gray-light;
@@ -67,6 +69,12 @@
             background-color: $color-gray-light;
             background: url("../assets/img/down-arrow.png") 96% / 15%
                 no-repeat #eee;
+
+            &--1 {
+                background-size: contain;
+                width: 100%;
+                max-width: none;
+            }
         }
         &-checkbox {
             height: 20px;
