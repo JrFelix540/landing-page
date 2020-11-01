@@ -1019,7 +1019,7 @@ body {
   .form__input--1 {
     width: 230px; }
   .form__input--2 {
-    width: 100%; }
+    width: 100% !important; }
   .form__input-file {
     opacity: 0; }
   .form__input-select {
@@ -1520,3 +1520,18 @@ body {
     .card__terms .card__footer .card__buttons {
       display: flex;
       justify-content: space-between; } }
+
+.contact__img {
+  display: flex;
+  justify-content: center; }
+  .contact__img img {
+    height: 400px;
+    width: auto; }
+
+@media screen and (max-width: 1024px) {
+  .contact__img img {
+    height: 350px; } }
+
+@media screen and (max-width: 576px) {
+  .contact__img img {
+    height: 150px; } }

@@ -105,27 +105,47 @@
         </li>
     </ul>
 
-    <main class="container">
-        <form class="flex--2 margin__large">
-            <div class="heading__tertiary margin__bottom--medium">Get in contact with us</div>
-            <div class="form__validation ">
-                <div class="text__validation">Incorrect Username</div>
+    <main>
+        <div class="u_center_text margin__bottom--medium">
+            <h2 class="heading__tertiary uppercase">Have some questions?</h3>
+        </div>
+        <div class="u_center_text margin__bottom--large">
+            <p class="text__primary">Fill out this form or email us at <a
+                    href="mailto:&#99;&#111;&#110;&#116;&#97;&#99;&#116;&#64;&#102;&#111;&#114;&#101;&#105;&#103;&#110;&#101;&#101;&#114;&#115;&#46;&#99;&#111;&#109;">&#99;&#111;&#110;&#116;&#97;&#99;&#116;&#64;&#102;&#111;&#114;&#101;&#105;&#103;&#110;&#101;&#101;&#114;&#115;&#46;&#99;&#111;&#109;</a>
+            </p>
+        </div>
+        <div class="grid-of-2 container">
+            <div class="contact__img">
+                <picture>
+                    <source srcset="./assets/img/openmail.webp" type="image/webp">
+                    <source srcset="./assets/img/openmail.png" type="image/png">
+                    <img src="./assets/img/openmail.png" alt="">
+                </picture>
             </div>
-            <div class="form__group form__group--3">
-                <input type="text" name="name" class="form__input form__input--2" placeholder="Name" id="">
-            </div>
-            <div class="form__group form__group--3">
-                <input type="email" name="email" class="form__input form__input--2" placeholder="Email" id="">
-            </div>
+            <form class="flex--2 margin__large">
+                <div class="form__validation ">
+                    <div class="text__validation">Incorrect Username</div>
+                </div>
+                <div class="form__group form__group--3">
+                    <input type="text" name="name" class="form__input form__input--2" placeholder="Name" id="">
+                </div>
+                <div class="form__group form__group--3">
+                    <input type="email" name="email" class="form__input form__input--2" placeholder="Email" id="">
+                </div>
 
-            <div class="form__group form__group--3">
-                <input type="text" name="organization" class="form__input form__input--2" placeholder="Organization"
-                    id="">
-            </div>
-            <div class="form__button u_center_text">
-                <button type="submit" class="btn btn__form uppercase">Contact Us</button>
-            </div>
-        </form>
+                <div class="form__group form__group--3">
+                    <input type="text" name="subject" class="form__input form__input--2" placeholder="Subject" id="">
+                </div>
+                <div class="form__group form__group--3">
+                    <textarea type="text" name="organization" class="form__input form__input--2"
+                        placeholder="Type message here..." rows="5" id=""></textarea>
+                </div>
+                <div class="form__button u_center_text">
+                    <button type="submit" class="btn btn__form uppercase">Contact Us</button>
+                </div>
+            </form>
+        </div>
+
 
 
     </main>

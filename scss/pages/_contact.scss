@@ -1,0 +1,29 @@
+.contact {
+    &__img {
+        display: flex;
+        justify-content: center;
+        img {
+            height: 400px;
+            width: auto;
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .contact {
+        &__img {
+            img {
+                height: 350px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 576px) {
+    .contact {
+        &__img {
+            img {
+                height: 150px;
+            }
+        }
+    }
+}
