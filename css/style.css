@@ -1003,7 +1003,7 @@ body {
     display: flex;
     align-items: center;
     width: 370px;
-    padding: 10px 15px; }
+    padding: 0px 15px 10px 0; }
   .form__group--3 {
     width: 80% !important; }
   .form__group-sm {
