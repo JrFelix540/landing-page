@@ -1533,5 +1533,5 @@ body {
     height: 350px; } }
 
 @media screen and (max-width: 576px) {
-  .contact__img img {
-    height: 150px; } }
+  .contact__img {
+    display: none; } }

@@ -21,9 +21,7 @@
 @media screen and (max-width: 576px) {
     .contact {
         &__img {
-            img {
-                height: 150px;
-            }
+            display: none;
         }
     }
 }
