@@ -77,6 +77,12 @@
         font-weight: 700;
         font-size: 36px;
         color: $color-primary;
+        &--1 {
+            color: $color-white;
+        }
+        &--2 {
+            color: $color-gray-dark;
+        }
     }
     &__secondary {
         font-family: "Rubik";
@@ -111,11 +117,16 @@
 .text {
     font-family: "Rubik";
     font-weight: 400;
-
+    line-height: 1;
     &__secondary {
         font-size: 18px;
         color: $color-white;
         line-height: 40px;
+
+        &--1 {
+            color: $color-black;
+            line-height: 1;
+        }
     }
     &__validation {
         font-family: "Rubik";
@@ -173,6 +184,14 @@
     }
 }
 
+.form {
+    &__group-label {
+        font-family: "Rubik";
+        font-size: 16px;
+        color: rgba($color-text, 0.7);
+    }
+}
+
 .link {
     &__primary {
         font-family: "Roboto";
@@ -181,6 +200,7 @@
         color: rgba($color-primary, 0.9);
     }
 }
+
 .mobile {
     &__menu {
         &-link {
@@ -203,6 +223,13 @@
         cursor: pointer;
         text-decoration: underline;
     }
+}
+.blockquote {
+    padding: 10px 20px;
+    border-left: 5px solid #e2e2e2;
+    font-size: 18px;
+    line-height: 22px;
+    font-family: "Rubik";
 }
 @media screen and (max-width: 1024px) {
     .heading {

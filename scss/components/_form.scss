@@ -6,7 +6,24 @@
         background-color: $color-gray-light;
         padding: 10px 15px;
         width: 370px;
+        position: relative;
+        &--grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-column-gap: 20px;
+            width: 83%;
 
+            .form__group {
+                width: auto;
+                .form__input {
+                    width: 100%;
+                }
+            }
+        }
+
+        &-label {
+            position: absolute;
+        }
         &--1 {
             display: flex;
             background-color: $color-gray-light;
@@ -54,6 +71,9 @@
         }
         &--2 {
             width: 100%;
+        }
+        &-file {
+            opacity: 0;
         }
         &-select {
             border: none;
@@ -148,6 +168,11 @@
 
             &--1 {
                 width: 120px;
+            }
+        }
+        &__group {
+            &--grid {
+                grid-template-columns: 1fr;
             }
         }
     }

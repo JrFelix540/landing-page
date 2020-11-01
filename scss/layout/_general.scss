@@ -9,7 +9,7 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         -ms-grid-columns: 1fr 1fr;
-        grid-column-gap: 40px;
+        grid-gap: 40px;
     }
 
     &-3 {

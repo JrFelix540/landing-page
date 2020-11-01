@@ -1,0 +1,9 @@
+.list {
+    &__primary {
+        list-style-type: disc;
+
+        &-item {
+            margin-left: 15px;
+        }
+    }
+}

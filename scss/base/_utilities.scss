@@ -11,6 +11,9 @@
     &__right {
         text-align: right;
     }
+    &__left {
+        text-align: left;
+    }
 }
 .uppercase {
     text-transform: uppercase;
@@ -27,8 +30,30 @@
     }
 }
 .margin {
+    &__top {
+        &-small {
+            margin: 10px;
+        }
+    }
     &__large {
         margin: 40px 0;
+    }
+    &__medium {
+        margin: 20px 0;
+    }
+    &__small {
+        margin: 10px 0;
+    }
+}
+.padding {
+    &__small {
+        padding: 10px;
+    }
+    &__medium {
+        padding: 20px;
+    }
+    &__large {
+        padding: 40px;
     }
 }
 .near__invisible {
