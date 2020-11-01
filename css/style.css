@@ -533,6 +533,8 @@ body {
       font-size: 16px;
       color: rgba(0, 0, 0, 0.6);
       line-height: 1.2; }
+    .text__primary--3 {
+      line-height: 1; }
   .text__copyright {
     font-family: "Rubik";
     font-weight: 500;
@@ -614,6 +616,9 @@ body {
 .u_center_text {
   text-align: center; }
 
+.text__decoration-none {
+  text-decoration: none; }
+
 .flex {
   display: flex; }
 
@@ -634,6 +639,9 @@ body {
 
 .margin__bottom--small {
   margin-bottom: 10px; }
+
+.margin__bottom--none {
+  margin-bottom: 0 !important; }
 
 .margin__top-small {
   margin: 10px; }

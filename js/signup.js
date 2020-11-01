@@ -111,3 +111,18 @@ closeTermsBtn &&
     closeTermsBtn.addEventListener("click", () => {
         termsContainer.style.display = "none";
     });
+
+const openPrivacyBtn = document.querySelector(`#openPrivacyBtn`);
+const closePrivacyBtn = document.querySelector(`#closePrivacyBtn`);
+
+const privacyContainer = document.querySelector(`#privacyModal`);
+
+openPrivacyBtn &&
+    openPrivacyBtn.addEventListener(`click`, () => {
+        privacyContainer.style.display = "block";
+    });
+
+closePrivacyBtn &&
+    closePrivacyBtn.addEventListener(`click`, () => {
+        privacyContainer.style.display = `none`;
+    });

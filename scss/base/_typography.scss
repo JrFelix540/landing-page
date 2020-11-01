@@ -155,6 +155,9 @@
             color: rgba($color-black, 0.6);
             line-height: 1.2;
         }
+        &--3 {
+            line-height: 1;
+        }
     }
     &__copyright {
         font-family: "Rubik";
