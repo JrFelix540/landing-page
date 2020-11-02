@@ -999,12 +999,8 @@ body {
     margin-bottom: 20px;
     align-items: center; }
   .form__group--2 {
-    margin-bottom: 15px;
     display: flex;
-    align-items: center;
-    width: 370px;
-    padding: 0px 15px 10px 0;
-    margin-top: -27px; }
+    align-items: center; }
   .form__group--3 {
     width: 80% !important; }
   .form__group-sm {
@@ -1089,8 +1085,10 @@ body {
 @media screen and (max-width: 1024px) {
   .form__group {
     width: 270px; }
-    .form__group--2 {
-      width: 270px; }
+    .form__group-remember.flex {
+      flex-direction: column;
+      align-items: flex-start;
+      margin-bottom: 15px; }
   .form__input {
     width: 200px; }
     .form__input--1 {
@@ -1119,7 +1117,6 @@ body {
   display: block;
   position: relative;
   padding-left: 30px;
-  margin-bottom: 15px;
   cursor: pointer;
   font-size: 16px; }
   .control input {
