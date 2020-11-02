@@ -1,0 +1,52 @@
+.faq {
+    &__header {
+        height: 15vh;
+        background-color: $color-white;
+    }
+    &__main {
+        min-height: 70vh;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+    &__urls {
+        background-color: $color-bg;
+        padding: 40px 20px;
+        display: flex;
+        justify-content: center;
+        &-container {
+            text-align: center;
+        }
+        &-heading {
+            margin-bottom: 20px;
+        }
+    }
+    &__accordions {
+        background-color: $color-white;
+        padding: 40px 20px;
+
+        &-heading {
+            margin-bottom: 20px;
+        }
+    }
+    &__footer {
+        margin-top: 0;
+    }
+}
+@media screen and (min-height: 850px) {
+    .faq {
+        &__header {
+            height: 9vh;
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .faq {
+        &__main {
+            grid-template-columns: 1fr;
+        }
+        &__urls {
+            display: none;
+        }
+    }
+}

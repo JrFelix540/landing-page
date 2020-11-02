@@ -1,0 +1,46 @@
+.accordion {
+    border-top: 1px solid $color-gray;
+    border-bottom: 1px solid $color-gray;
+
+    &__button {
+        padding: 15px 10px;
+        cursor: pointer;
+        text-align: left;
+
+        &:after {
+            content: "\002B";
+            color: #777;
+            font-weight: bold;
+            float: right;
+            margin-left: 5px;
+        }
+    }
+
+    .panel {
+        display: none;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease;
+
+        p {
+            padding: 10px;
+            opacity: 0;
+            transition: all ease-in 0.5s;
+        }
+    }
+
+    &.active {
+        .accordion__button {
+            &:after {
+                content: "\2212";
+            }
+        }
+        .panel {
+            display: block;
+
+            p {
+                opacity: 1;
+            }
+        }
+    }
+}

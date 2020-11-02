@@ -1151,6 +1151,35 @@ body {
   .list__primary-item {
     margin-left: 15px; }
 
+.accordion {
+  border-top: 1px solid #c8c8c8;
+  border-bottom: 1px solid #c8c8c8; }
+  .accordion__button {
+    padding: 15px 10px;
+    cursor: pointer;
+    text-align: left; }
+    .accordion__button:after {
+      content: "\002B";
+      color: #777;
+      font-weight: bold;
+      float: right;
+      margin-left: 5px; }
+  .accordion .panel {
+    display: none;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease; }
+    .accordion .panel p {
+      padding: 10px;
+      opacity: 0;
+      transition: all ease-in 0.5s; }
+  .accordion.active .accordion__button:after {
+    content: "\2212"; }
+  .accordion.active .panel {
+    display: block; }
+    .accordion.active .panel p {
+      opacity: 1; }
+
 .header__container {
   display: flex;
   justify-content: space-between;
@@ -1540,4 +1569,42 @@ body {
 
 @media screen and (max-width: 576px) {
   .contact__img {
+    display: none; } }
+
+.faq__header {
+  height: 15vh;
+  background-color: #ffffff; }
+
+.faq__main {
+  min-height: 70vh;
+  display: grid;
+  grid-template-columns: 1fr 2fr; }
+
+.faq__urls {
+  background-color: #fef8f5;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center; }
+  .faq__urls-container {
+    text-align: center; }
+  .faq__urls-heading {
+    margin-bottom: 20px; }
+
+.faq__accordions {
+  background-color: #ffffff;
+  padding: 40px 20px; }
+  .faq__accordions-heading {
+    margin-bottom: 20px; }
+
+.faq__footer {
+  margin-top: 0; }
+
+@media screen and (min-height: 850px) {
+  .faq__header {
+    height: 9vh; } }
+
+@media screen and (max-width: 576px) {
+  .faq__main {
+    grid-template-columns: 1fr; }
+  .faq__urls {
     display: none; } }
