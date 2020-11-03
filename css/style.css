@@ -1152,8 +1152,9 @@ body {
     margin-left: 15px; }
 
 .accordion {
-  border-top: 1px solid #c8c8c8;
   border-bottom: 1px solid #c8c8c8; }
+  .accordion:first-child {
+    border-top: 1px solid #c8c8c8; }
   .accordion__button {
     padding: 15px 10px;
     cursor: pointer;
@@ -1165,20 +1166,16 @@ body {
       float: right;
       margin-left: 5px; }
   .accordion .panel {
-    display: none;
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.2s ease; }
+    transition: max-height 0.2s ease;
+    height: auto; }
     .accordion .panel p {
-      padding: 10px;
-      opacity: 0;
-      transition: all ease-in 0.5s; }
+      padding: 10px; }
   .accordion.active .accordion__button:after {
     content: "\2212"; }
   .accordion.active .panel {
     display: block; }
-    .accordion.active .panel p {
-      opacity: 1; }
 
 .header__container {
   display: flex;
@@ -1581,10 +1578,10 @@ body {
   grid-template-columns: 1fr 2fr; }
 
 .faq__urls {
-  background-color: #fef8f5;
   padding: 40px 20px;
+  border-right: 1px solid #c8c8c8;
   display: flex;
-  justify-content: center; }
+  justify-content: flex-start; }
   .faq__urls-container {
     text-align: center; }
   .faq__urls-heading {
@@ -1607,4 +1604,4 @@ body {
   .faq__main {
     grid-template-columns: 1fr; }
   .faq__urls {
-    display: none; } }
+    justify-content: center; } }

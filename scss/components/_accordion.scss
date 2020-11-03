@@ -1,7 +1,8 @@
 .accordion {
-    border-top: 1px solid $color-gray;
     border-bottom: 1px solid $color-gray;
-
+    &:first-child {
+        border-top: 1px solid $color-gray;
+    }
     &__button {
         padding: 15px 10px;
         cursor: pointer;
@@ -17,15 +18,13 @@
     }
 
     .panel {
-        display: none;
         max-height: 0;
         overflow: hidden;
         transition: max-height 0.2s ease;
+        height: auto;
 
         p {
             padding: 10px;
-            opacity: 0;
-            transition: all ease-in 0.5s;
         }
     }
 
@@ -37,10 +36,6 @@
         }
         .panel {
             display: block;
-
-            p {
-                opacity: 1;
-            }
         }
     }
 }

@@ -9,10 +9,10 @@
         grid-template-columns: 1fr 2fr;
     }
     &__urls {
-        background-color: $color-bg;
         padding: 40px 20px;
+        border-right: 1px solid $color-gray;
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
         &-container {
             text-align: center;
         }
@@ -46,7 +46,7 @@
             grid-template-columns: 1fr;
         }
         &__urls {
-            display: none;
+            justify-content: center;
         }
     }
 }
