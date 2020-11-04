@@ -1156,7 +1156,7 @@ body {
   .accordion:first-child {
     border-top: 1px solid #c8c8c8; }
   .accordion__button {
-    padding: 15px 10px;
+    padding: 30px 10px;
     cursor: pointer;
     text-align: left; }
     .accordion__button:after {
@@ -1586,6 +1586,32 @@ body {
     text-align: center; }
   .faq__urls-heading {
     margin-bottom: 20px; }
+  .faq__urls-mobile {
+    display: none;
+    flex-direction: column; }
+    .faq__urls-mobile-container {
+      width: 100%; }
+      .faq__urls-mobile-container .faq__urls-list {
+        margin-left: 20px;
+        transition: max-height 0.2s ease;
+        max-height: 0; }
+      .faq__urls-mobile-container .faq__urls-item {
+        display: none; }
+      .faq__urls-mobile-container.active .faq__urls-item {
+        display: flex; }
+
+.faq__mobile-heading {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px; }
+
+.faq__mobile-dropdown {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .faq__mobile-dropdown img {
+    height: 10px;
+    transition: transform 0.2s ease; }
 
 .faq__accordions {
   background-color: #ffffff;
@@ -1603,5 +1629,13 @@ body {
 @media screen and (max-width: 576px) {
   .faq__main {
     grid-template-columns: 1fr; }
+  .faq__accordions {
+    padding: 20px; }
+    .faq__accordions-heading {
+      display: none; }
   .faq__urls {
-    justify-content: center; } }
+    justify-content: center;
+    border-left: none;
+    display: none; }
+    .faq__urls-mobile {
+      display: flex; } }

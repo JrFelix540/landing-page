@@ -19,6 +19,47 @@
         &-heading {
             margin-bottom: 20px;
         }
+        &-mobile {
+            display: none;
+            flex-direction: column;
+            &-container {
+                width: 100%;
+                .faq__urls {
+                    &-list {
+                        margin-left: 20px;
+                        transition: max-height 0.2s ease;
+                        max-height: 0;
+                    }
+                    &-item {
+                        display: none;
+                    }
+                }
+
+                &.active {
+                    .faq__urls {
+                        &-item {
+                            display: flex;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &__mobile {
+        &-heading {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 20px;
+        }
+        &-dropdown {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img {
+                height: 10px;
+                transition: transform 0.2s ease;
+            }
+        }
     }
     &__accordions {
         background-color: $color-white;
@@ -45,8 +86,20 @@
         &__main {
             grid-template-columns: 1fr;
         }
+
+        &__accordions {
+            padding: 20px;
+            &-heading {
+                display: none;
+            }
+        }
         &__urls {
             justify-content: center;
+            border-left: none;
+            display: none;
+            &-mobile {
+                display: flex;
+            }
         }
     }
 }

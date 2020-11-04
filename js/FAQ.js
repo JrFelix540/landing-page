@@ -17,3 +17,17 @@ const toggleActiveAccordion = (e) => {
 for (const accordionBtn of accordionBtns) {
     accordionBtn.addEventListener("click", toggleActiveAccordion);
 }
+
+// faq mobile menu
+
+const faqDropdown = document.querySelector(".faq__mobile-dropdown");
+const faqMobileMenu = document.querySelector("#faqMobileContainer");
+const faqDropdownMenu = document.querySelector("#faqDropdownMenu");
+faqDropdown.addEventListener("click", (e) => {
+    faqMobileMenu.classList.toggle("active");
+    if (faqDropdownMenu.style.maxHeight) {
+        faqDropdownMenu.style.maxHeight = null;
+    } else {
+        faqDropdownMenu.style.maxHeight = "500px";
+    }
+});
