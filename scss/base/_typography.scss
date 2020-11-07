@@ -262,6 +262,9 @@
     .text {
         &__primary {
             text-align: center;
+            &--4 {
+                font-size: 14px;
+            }
         }
         &__secondary {
             line-height: 1.2;
