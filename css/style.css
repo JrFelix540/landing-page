@@ -1627,7 +1627,8 @@ body {
   .faq__main {
     grid-template-columns: 1fr; }
   .faq__accordions {
-    padding: 20px; }
+    padding: 20px;
+    margin-bottom: 20px; }
     .faq__accordions-heading {
       display: none; }
   .faq__urls {
@@ -1635,4 +1636,5 @@ body {
     border-left: none;
     display: none; }
     .faq__urls-mobile {
-      display: flex; } }
+      display: flex;
+      margin-top: 20px; } }

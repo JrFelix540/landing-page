@@ -89,6 +89,7 @@
 
         &__accordions {
             padding: 20px;
+            margin-bottom: 20px;
             &-heading {
                 display: none;
             }
@@ -99,6 +100,7 @@
             display: none;
             &-mobile {
                 display: flex;
+                margin-top: 20px;
             }
         }
     }
